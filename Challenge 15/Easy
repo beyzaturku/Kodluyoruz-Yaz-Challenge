@@ -1,6 +1,6 @@
 namespace Challenge15
 {
-    public class Medium
+    public class Easy
     {
         static void main()
        {
