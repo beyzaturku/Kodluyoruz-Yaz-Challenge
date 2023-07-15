@@ -1,0 +1,32 @@
+namespace Challenge15
+{
+    public class Hard
+    {
+        static void main()
+        {
+
+            int[] dizi = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            Console.WriteLine("Hedef sayıyı girin: ");
+            int hedefSayi = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                for (int j = i + 1; j < dizi.Length; j++)
+                {
+                    for (int k = j + 1; k < dizi.Length; k++)
+                    {
+                        if (dizi[i] + dizi[j] + dizi[k] == hedefSayi)
+                        {
+                            Console.WriteLine("{0} + {1} + {2} = {3}", dizi[i], dizi[j], dizi[k], hedefSayi);
+
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
