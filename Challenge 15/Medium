@@ -1,0 +1,42 @@
+namespace Challenge15
+{
+    public class Medium
+    {
+        static void main()
+        { 
+            Console.WriteLine("Bir metin giriniz:");
+            string metin = Console.ReadLine();
+
+            char[] harfDizi = metin.ToCharArray();
+
+            int count = 0;
+            char enBuyukHarf = ' ';
+
+            for(int i=0; i<harfDizi.Length; i++)
+            {
+                int toplam = 0;
+                for(int j=0; j<harfDizi.Length; j++)
+                {
+                    if ((harfDizi[i] == harfDizi[j]) && (enBuyukHarf != harfDizi[i]))
+                    {
+                        toplam++;
+                    }
+                }
+
+                if(toplam > count)
+                {
+                    count = toplam;
+                    enBuyukHarf = harfDizi[i];
+                }
+                
+            }
+
+            Console.WriteLine("En çok tekrar eden harf: {0}", enBuyukHarf);
+            Console.WriteLine("Kaç defa tekrar ediyor?" + count);
+            Console.ReadLine();
+            
+        }
+    }
+}
+
+
