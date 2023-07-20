@@ -1,0 +1,10 @@
+class Medium {
+  static void Main() {
+     while(true){
+        Console.WriteLine("Lütfen bir kelime giriniz:");
+        string kelime = Console.ReadLine();
+    
+        Console.WriteLine("Yeni kelime:" + kelime.ToUpper());
+     }
+  }
+}
