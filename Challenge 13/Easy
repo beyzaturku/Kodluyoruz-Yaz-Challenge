@@ -1,0 +1,22 @@
+class Easy {
+  static void Main() {
+  
+    Console.WriteLine("Lütfen bir sayı giriniz:");
+    int sayi = int.Parse(Console.ReadLine());
+    
+    int count = 0;
+    
+    for(int i = 1; i<= sayi; i++){
+        if(sayi % i == 0){
+            count ++;
+        }
+    }
+    
+    if(count == 2){
+        Console.WriteLine("ASAL SAYI.");
+    }
+    else{
+        Console.WriteLine("ASAL SAYI DEĞİL.");
+    }
+  }
+}
