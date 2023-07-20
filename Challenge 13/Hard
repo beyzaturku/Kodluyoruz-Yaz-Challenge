@@ -1,0 +1,23 @@
+class Hard
+{
+  static void Main ()
+  {
+    Console.Write ("Maliyet giriniz:");
+    double cost = int.Parse (Console.ReadLine ());
+
+    Console.Write ("Satış fiyatı giriniz:");
+    double price = int.Parse (Console.ReadLine ());
+
+    if (price <= cost)
+    {
+	  Console.WriteLine ("Kar edilemez.");     
+	 }
+    else
+    {
+	 int ürünSayisi = (int) Math.Ceiling (cost / (price - cost));
+	 Console.WriteLine ("Kar edilebilmesi için kaç tane ürün satılmalı? " + ürünSayisi);
+		     
+    }
+  }
+
+}
