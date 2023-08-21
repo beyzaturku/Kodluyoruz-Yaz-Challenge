@@ -1,0 +1,13 @@
+class Hard {
+  static void Main() {
+    double birinciGiris = 1.0/10.0;
+    double ikinciGiris = 1.0/15.0;
+    
+    double cikis = 1.0/30.0;
+    
+    double dolumHizi = birinciGiris + ikinciGiris - cikis;
+    
+    double dolumSuresi = 1.0/ dolumHizi;
+    
+    Console.WriteLine($"Havuzun dolum süresi: {dolumHizi:F2}");
+  }
