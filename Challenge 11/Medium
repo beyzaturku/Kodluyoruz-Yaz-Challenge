@@ -1,0 +1,16 @@
+class Medium{
+  static void Main() {
+   int[] dizi = {14,78,95,25,34};
+   
+   int toplam =0;
+   
+   foreach(int sayi in dizi){
+       toplam += sayi;
+   }
+   
+   double ortalama = (double) toplam / dizi.Length;
+   
+   Console.WriteLine($"Ortalama: {ortalama}");
+  }
+  
+}
