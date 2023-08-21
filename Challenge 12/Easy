@@ -1,0 +1,11 @@
+class Easy {
+  static void Main() {
+   int hiz =60;
+   int yol = 240;
+   
+   double zaman = (double) yol / hiz;
+   
+   Console.WriteLine($"Araba {zaman} saatte {yol} km yol alir. ");
+  
+  }
+}
