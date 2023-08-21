@@ -1,0 +1,29 @@
+class Medium{
+  static void Main() {
+    int[] dizi = {1,2,2,3,3,3,4,4,4,4,5,5,5,5,5};
+    
+    Console.WriteLine("Hedef sayiyi giriniz:");
+    int hedefSayi = Convert.ToInt32(Console.ReadLine());
+    
+    int tekrarSayisi = tekrarSayisiniBul(dizi, hedefSayi);
+    
+    Console.WriteLine($"{hedefSayi} sayisi dizide {tekrarSayisi} kez tekrar ediyor");
+   
+  }
+  
+  static int tekrarSayisiniBul(int[] dizi, int hedef){
+      int sayac = 0;
+      foreach(int sayi in dizi){
+          if(sayi == hedef){
+              sayac++;
+          }
+          
+          if(sayi > hedef){
+              break;
+          }
+      }
+      
+      return sayac;
+  }
+  
+}
