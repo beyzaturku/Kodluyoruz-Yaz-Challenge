@@ -1,0 +1,21 @@
+class Medium {
+  static void Main() {
+    int toplamHayvan = 36;
+    int toplamBacak = 100;
+    
+    int tavukSayisi = 0, koyunSayisi = 0;
+    
+    for(int tavuk =0; tavuk <=toplamHayvan ; tavuk++){
+        int koyun = toplamHayvan - tavuk;
+        
+        if((tavuk*2) + (koyun*4) == toplamBacak){
+            tavukSayisi = tavuk;
+            koyunSayisi = koyun;
+            break;
+        }
+    }
+    
+    Console.WriteLine($"Tavuk Sayisi: {tavukSayisi}"); 
+    Console.WriteLine($"Koyun Sayisi: {koyunSayisi}");
+  
+  }
