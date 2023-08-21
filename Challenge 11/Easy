@@ -1,0 +1,25 @@
+class Easy{
+  static void Main() {
+    Console.WriteLine("Bir sayi giriniz:");
+    int sayi = Convert.ToInt32(Console.ReadLine());
+    
+    double faktoriyel = faktoriyelHesapla(sayi);
+    
+    Console.WriteLine($"{sayi}! ={faktoriyel}");
+    
+  }
+  
+  static double faktoriyelHesapla(int n){
+      if(n==0 || n==1){
+          return 1;
+      }
+      
+      double faktoriyel = 1;
+      
+      for(int i=2; i<=n; i++){
+          faktoriyel *= i;
+      }
+      
+      return faktoriyel;
+  }
+}
