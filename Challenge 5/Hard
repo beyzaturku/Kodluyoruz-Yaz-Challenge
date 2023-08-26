@@ -1,0 +1,17 @@
+class Hard {
+  static void Main() {
+   Console.WriteLine("Bir sayi giriniz:");
+   int sayi = Convert.ToInt16(Console.ReadLine());
+   
+    double karekok = Math.Sqrt(sayi);
+   
+    if (Math.Abs(karekok - Math.Floor(karekok)) < 1e-10)
+    {
+        Console.WriteLine($"Karekökten çıkıyor: {Math.Floor(karekok)}");
+    }
+    else
+    {
+        Console.WriteLine("Karekökten tam olarak çıkmıyor.");
+    }
+  }
+}
