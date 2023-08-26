@@ -1,0 +1,17 @@
+class Hard {
+  static void Main() {
+    Console.WriteLine("Bir sayi giriniz:");
+    int sayi = Convert.ToInt16(Console.ReadLine());
+    
+    int toplam = 0;
+    int temp = sayi;
+    
+    while(temp > 0){
+        int basamak = temp % 10;
+        toplam += basamak * basamak * basamak;
+        temp /= 10;
+    }
+    
+    Console.WriteLine($"{sayi} sayisi bir armstrong sayidir.");
+  }
+}
