@@ -1,0 +1,13 @@
+class Easy {
+  static void Main() {
+   Console.WriteLine("1.sayiyi giriniz:");
+   int birinciSayi = Convert.ToInt16(Console.ReadLine());
+   
+   Console.WriteLine("2.sayiyi giriniz:");
+   int ikinciSayi = Convert.ToInt16(Console.ReadLine());
+   
+   int toplam = birinciSayi + ikinciSayi;
+   
+   Console.WriteLine($"Iki sayinin toplami: {toplam}");
+  }
+}
