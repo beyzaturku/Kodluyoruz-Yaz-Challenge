@@ -1,0 +1,16 @@
+class Easy {
+  static void Main() {
+    Console.WriteLine("Bir torbada 5 kirmizi, 4 yesil ve 3 mavi top bulunuyor. Kutudan rastgele çekilen 2 topun aynı renk olma olasılığı nedir?");
+    
+    int toplamTop = 5 + 4 + 3;
+    
+    double olasilik1 = (double)5 / toplamTop * (4 / (toplamTop - 1));
+    double olasilik2 = (double)4 / toplamTop * (3 / (toplamTop - 1));
+    double olasilik3 = (double)3 / toplamTop * (2 / (toplamTop - 1));
+    
+    double toplamOlasilik = olasilik1 + olasilik2 + olasilik3;
+    
+    Console.WriteLine($"Ayni renk olma olasiligi: {toplamOlasilik}");
+    
+  }
+}
