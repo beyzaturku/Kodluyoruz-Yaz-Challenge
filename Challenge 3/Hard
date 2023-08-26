@@ -1,0 +1,31 @@
+class Medium {
+  static void Main() {
+   Console.WriteLine("Bir sinifta 30 ogrenci bulunmaktadir. Ogrencilerden kac farkli sekilde 4 kisi secilebilir?");
+   
+   int toplamOgrenciSayisi = 30;
+   int secilecekOgrenciSayisi = 4;
+   
+   long kombinasyon = CalculateCombination(toplamOgrenciSayisi, secilecekOgrenciSayisi);
+   Console.WriteLine($"Öğrencilerden {secilecekOgrenciSayisi} kişi seçildiğinde farklı seçim sayısı: {kombinasyon}");
+  }
+  
+  static long CalculateCombination(int n, int r)
+   {
+        long nFaktoriyel = CalculateFactorial(n);
+        long rFaktoriyel = CalculateFactorial(r);
+        long nMinusRFaktoriyel = CalculateFactorial(n - r);
+
+        long kombinasyon = nFaktoriyel / (rFaktoriyel * nMinusRFaktoriyel);
+        return kombinasyon;
+    }
+
+    static long CalculateFactorial(int num)
+    {
+        if (num <= 1)
+        {
+            return 1;
+        }
+        return num * CalculateFactorial(num - 1);
+    }
+  
+}
