@@ -1,0 +1,16 @@
+class Easy {
+  static void Main() {
+    //dizideki en büyük sayı
+    int[] dizi = {1,7,9,15,14};
+    
+    int enBuyuk = dizi[0];
+    
+    for(int i=0; i<dizi.Length; i++){
+        if(dizi[i] > enBuyuk){
+            enBuyuk = dizi[i];
+        }
+    }
+    
+    Console.WriteLine($"En Büyük Sayı: {enBuyuk}");
+  }
+}
