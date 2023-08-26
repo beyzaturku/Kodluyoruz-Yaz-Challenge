@@ -1,0 +1,13 @@
+class Hard {
+  static void Main() {
+    Console.WriteLine("Bir yaris pistinde iki yarismaci ayni anda start aliyor. İlk yarismaci saatte 15 km hzila, ikinci yarismaci ise saatte 20 km hizla kosuyor.İkinci yarışmacı kaç saat sonra ilk yarışmacıyı yakalar?");
+    double ilkYarimaciHiz = 15, ikinciYarismaciHiz =20;
+    
+    double hizFarki = ikinciYarismaciHiz - ilkYarimaciHiz;
+    
+    double saat = 0.0 - (15/ hizFarki);
+    
+    Console.WriteLine($"İkinci yarismaci, ilk yarismaciyi {saat} saat sonra yakalar. ");
+
+  }
+}
