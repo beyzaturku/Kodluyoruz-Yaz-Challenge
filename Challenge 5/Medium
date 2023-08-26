@@ -1,0 +1,13 @@
+class Medium {
+  static void Main() {
+   Console.WriteLine("Bir metin giriniz:");
+   string metin = Console.ReadLine();
+   
+   string[] kelimeler = metin.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+   
+   int kelimeSayisi = kelimeler.Length;
+   
+   Console.WriteLine($"Metindeki kelime sayisi: {kelimeSayisi}");
+    
+  }
+}
