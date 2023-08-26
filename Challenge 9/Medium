@@ -1,0 +1,17 @@
+class Medium {
+  static void Main() {
+    int[] dizi = {2,4,8};
+    
+    int toplam = 0;
+    
+    foreach(int sayi in dizi)
+    {
+       if(sayi % 2 == 0)
+        {
+             toplam += sayi;
+        }
+    }
+    
+    Console.WriteLine($"Dizideki cift sayilarin toplami: {toplam}");
+  }
+}
