@@ -1,0 +1,24 @@
+class Hard {
+  static void Main() {
+   Console.WriteLine("Bir metin giriniz:");
+   string metin = Console.ReadLine();
+   
+   int sesliHarfSayisi = CountVowels(metin);
+   Console.WriteLine($"Metindeki sesli harf sayisi: {sesliHarfSayisi}");
+  }
+  
+  static int CountVowels(string metin){
+      int sayac =0;
+      string sesliHarfler = "aeıioöuüAEIİOÖUÜ";
+      
+      foreach(char karakter in metin)
+      {
+        if(sesliHarfler.Contains(karakter)){
+            sayac++;
+        }
+      }
+      
+      return sayac;
+  }
+
+}
