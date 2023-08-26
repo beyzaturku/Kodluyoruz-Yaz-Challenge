@@ -1,0 +1,14 @@
+class Easy {
+  static void Main() {
+    
+    Console.WriteLine("Bir sayi giriniz:");
+    int sayi = Convert.ToInt16(Console.ReadLine());
+    
+    if(sayi % 2 == 0){
+        Console.WriteLine("Cift Sayi");
+    }
+    else{
+        Console.WriteLine("Tek Sayi");
+    }
+  }
+}
