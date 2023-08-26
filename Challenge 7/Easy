@@ -1,0 +1,10 @@
+class Easy {
+  static void Main() {
+    Console.WriteLine("Bir kelime giriniz:");
+    string kelime = Console.ReadLine();
+    
+    int uzunluk = kelime.Length;
+    
+    Console.WriteLine($"{kelime} kelimesinin uzunlugu: {uzunluk}");
+  }
+}
