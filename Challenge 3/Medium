@@ -1,0 +1,17 @@
+class Medium {
+  static void Main() {
+   Console.WriteLine("Bir kirtasiyede bir kitap 80TL, bir defter 20TL, bir kalem 5 TL'dir.");
+   Console.WriteLine("Musteri kaç kitap aldi?");
+   int kitapSayisi = Convert.ToInt16(Console.ReadLine());
+   
+   Console.WriteLine("Musteri kac defter aldi?");
+   int defterSayisi = Convert.ToInt16(Console.ReadLine());
+   
+   Console.WriteLine("Musteri kac kalem aldi?");
+   int kalemSayisi = Convert.ToInt16(Console.ReadLine());
+   
+   int toplam = kitapSayisi*80 + defterSayisi*20 +  kalemSayisi*5;
+   
+   Console.WriteLine($"Toplam odeme: {toplam}");
+  }
+}
