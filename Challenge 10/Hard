@@ -1,0 +1,15 @@
+class Hard {
+  static void Main() {
+    Console.WriteLine("Lutfen bir sayi giriniz:");
+    int sayi = Convert.ToInt16(Console.ReadLine());
+    
+    int toplam = 0;
+    for(int i=1; i<=sayi ; i++){
+        if(sayi % i == 0){
+            toplam += i;
+        }
+    }
+    
+    Console.WriteLine($"Sayinin Tam Bolenlerinin Toplami: {toplam}");
+  }
+}
