@@ -1,0 +1,15 @@
+class Easy {
+  static void Main() {
+   Console.WriteLine("Bir futbol macinda iki tur atis vardir. Biri 3 puanlik atis, biri 2 puanlik atis.");
+  
+   Console.WriteLine("3 puanlik atislarda kac kez isabet edildi?");
+   int uclukAtisSayisi = Convert.ToInt16(Console.ReadLine());
+   
+   Console.WriteLine("2 puanlik atislarda kac kez isabet edildi?");
+   int ikilikAtisSayisi = Convert.ToInt16(Console.ReadLine());
+   
+   int toplamPuan = uclukAtisSayisi*3 + ikilikAtisSayisi*2;
+   
+   Console.WriteLine($"Toplam Puan: {toplamPuan}");
+  }
+}
