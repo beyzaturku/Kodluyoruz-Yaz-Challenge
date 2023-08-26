@@ -1,6 +1,5 @@
 class Easy {
   static void Main() {
-    //dizideki en büyük sayı
     int[] dizi = {1,7,9,15,14};
     
     int enBuyuk = dizi[0];
