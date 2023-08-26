@@ -1,0 +1,23 @@
+class Medium {
+  static void Main() {
+   int[] dizi = {12,7,3,9,5,20,10};
+   
+   Array.Sort(dizi);
+   
+   int n = dizi.Length;
+   double medyan;
+   
+   if(n %2==0){
+       int ortaSol = (n/2)-1;
+       int ortaSag = n/2;
+       medyan = (dizi[ortaSol] + dizi[ortaSag]) / 2.0;
+   }
+   else{
+       int orta = n/2;
+       medyan = dizi[orta];
+   }
+   
+   Console.WriteLine($"Dizinin Medyani: {medyan}");
+
+  }
+}
