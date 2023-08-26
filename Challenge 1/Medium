@@ -1,0 +1,8 @@
+class Medium {
+  static void Main() {
+    Console.WriteLine("Yilda 36 kitap okumayi hedefleyen bir ogrenci, her ay esit sayida kitap okursa kaç kitap okumus olur?");
+    int toplamKitap = 36;
+    int heyAyOkunanKitapSayisi = toplamKitap/12;
+    Console.WriteLine($"Her ay okunan kitap sayisi: {heyAyOkunanKitapSayisi}");
+  }
+}
