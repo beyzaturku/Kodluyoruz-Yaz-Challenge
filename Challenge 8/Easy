@@ -1,0 +1,11 @@
+class Easy {
+  static void Main() {
+    Console.WriteLine("Bir sayi giriniz:");
+    int sayi = Convert.ToInt16(Console.ReadLine());
+    
+    int karesi = sayi*sayi;
+    
+    Console.WriteLine($"Sayinin Karesi: {karesi}");
+
+  }
+}
